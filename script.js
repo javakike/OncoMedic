@@ -103,6 +103,7 @@ const testimonials = [
 const bootstrap = () => {
   initLoader();
   initTheme();
+  renderLogos();
   initNavbar();
   initMobileMenu();
   initCounters();
@@ -144,6 +145,19 @@ function initTheme() {
   document.getElementById('themeToggle')?.addEventListener('click', () => {
     root.classList.toggle('dark');
     localStorage.setItem('oncomedic-theme', root.classList.contains('dark') ? 'dark' : 'light');
+  });
+}
+
+// ---- Render logos from branding config ----
+function renderLogos() {
+  const containers = document.querySelectorAll('.logo-container');
+  containers.forEach((container) => {
+    container.innerHTML = `
+      <img src="${BRANDING.logo.image}" alt="${BRANDING.logo.alt}" width="${BRANDING.logo.width}" height="${BRANDING.logo.height}" class="rounded-lg" />
+      <span class="font-display font-extrabold text-lg tracking-tight">
+        <span style="color: ${BRANDING.name.prefixColor};">${BRANDING.name.prefix}</span>${BRANDING.name.highlight}
+      </span>
+    `;
   });
 }
 
