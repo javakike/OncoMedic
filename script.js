@@ -6,7 +6,7 @@
    ========================================================= */
 
 // ---- Config ----
-const WHATSAPP_NUMBER = '50322223333'; // ← cambia por el número real (formato internacional sin +)
+const WHATSAPP_NUMBER = '50377556733'; // ← cambia por el número real (formato internacional sin +)
 
 // ---- Data ----
 const doctors = [
