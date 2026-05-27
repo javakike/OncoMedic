@@ -1,0 +1,139 @@
+<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="500" fill="#f0fdf4"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="550" cy="100" r="70" fill="#e0f2fe" opacity="0.5"/>
+  <circle cx="80" cy="450" r="80" fill="#ccfbf1" opacity="0.4"/>
+  
+  <!-- Laboratory scientist -->
+  <g transform="translate(80, 120)">
+    <!-- Head -->
+    <circle cx="50" cy="40" r="32" fill="#e8b9a3"/>
+    <!-- Hair -->
+    <path d="M 18 40 Q 18 12, 50 12 Q 82 12, 82 40 Z" fill="#5a4a3a"/>
+    <!-- Safety goggles -->
+    <circle cx="35" cy="35" r="10" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <circle cx="65" cy="35" r="10" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <line x1="45" y1="35" x2="55" y2="35" stroke="#d97706" stroke-width="1.5"/>
+    <!-- Lab coat -->
+    <rect x="15" y="72" width="70" height="95" fill="white" stroke="#64748b" stroke-width="2" rx="8"/>
+    <!-- Arms -->
+    <rect x="-5" y="85" width="20" height="65" fill="#e8b9a3" rx="10"/>
+    <rect x="85" y="87" width="20" height="63" fill="#e8b9a3" rx="10"/>
+  </g>
+  
+  <!-- Microscope (center-left) -->
+  <g transform="translate(150, 200)">
+    <!-- Base -->
+    <ellipse cx="40" cy="0" rx="45" ry="15" fill="#64748b"/>
+    <!-- Pole -->
+    <rect x="35" y="0" width="10" height="120" fill="#475569"/>
+    <!-- Arm -->
+    <path d="M 45 60 Q 80 55, 90 50" stroke="#475569" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- Eyepiece -->
+    <circle cx="90" cy="50" r="12" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+    <circle cx="90" cy="50" r="8" fill="#3b82f6" opacity="0.4"/>
+    <!-- Objective lens -->
+    <circle cx="45" cy="120" r="8" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+    <!-- Stage -->
+    <rect x="20" y="110" width="50" height="20" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+  </g>
+  
+  <!-- Test tubes and beakers (center) -->
+  <!-- Beaker 1 -->
+  <g transform="translate(280, 240)">
+    <path d="M 10 0 L 5 40 Q 5 50, 15 50 Q 25 50, 25 40 L 20 0 Z" stroke="#0ea5e9" stroke-width="2.5" fill="#e0f2fe" opacity="0.7"/>
+    <!-- Liquid inside -->
+    <path d="M 8 35 Q 8 48, 15 48 Q 22 48, 22 35 Z" fill="#3b82f6" opacity="0.6"/>
+    <!-- Label -->
+    <text x="15" y="25" font-size="8" fill="#0369a1" text-anchor="middle" font-weight="bold">A1</text>
+  </g>
+  
+  <!-- Test tube 1 -->
+  <g transform="translate(330, 250)">
+    <rect x="0" y="0" width="12" height="50" stroke="#8b5cf6" stroke-width="2.5" fill="#ede9fe" opacity="0.7" rx="2"/>
+    <!-- Liquid -->
+    <rect x="0" y="35" width="12" height="15" fill="#a78bfa" opacity="0.7" rx="2"/>
+    <!-- Stopper -->
+    <rect x="-2" y="-4" width="16" height="5" fill="#64748b" rx="1"/>
+  </g>
+  
+  <!-- Test tube 2 -->
+  <g transform="translate(380, 255)">
+    <rect x="0" y="0" width="12" height="50" stroke="#ec4899" stroke-width="2.5" fill="#fce7f3" opacity="0.7" rx="2"/>
+    <!-- Liquid -->
+    <rect x="0" y="30" width="12" height="20" fill="#f472b6" opacity="0.8" rx="2"/>
+    <!-- Stopper -->
+    <rect x="-2" y="-4" width="16" height="5" fill="#64748b" rx="1"/>
+  </g>
+  
+  <!-- Beaker 2 -->
+  <g transform="translate(430, 235)">
+    <path d="M 8 0 L 3 40 Q 3 48, 13 48 Q 23 48, 23 40 L 18 0 Z" stroke="#14b8a6" stroke-width="2.5" fill="#ccfbf1" opacity="0.7"/>
+    <!-- Liquid inside -->
+    <path d="M 6 32 Q 6 46, 13 46 Q 20 46, 20 32 Z" fill="#06b6d4" opacity="0.6"/>
+    <!-- Label -->
+    <text x="13" y="24" font-size="8" fill="#0d7377" text-anchor="middle" font-weight="bold">B2</text>
+  </g>
+  
+  <!-- Petri dish -->
+  <g transform="translate(330, 150)">
+    <!-- Base -->
+    <ellipse cx="30" cy="30" rx="28" ry="20" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <!-- Lid outline -->
+    <ellipse cx="30" cy="15" rx="30" ry="18" fill="none" stroke="#d97706" stroke-width="2.5" opacity="0.5"/>
+    <!-- Culture inside (grid pattern) -->
+    <line x1="15" y1="25" x2="45" y2="25" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+    <line x1="15" y1="35" x2="45" y2="35" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+    <line x1="20" y1="20" x2="20" y2="40" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+    <line x1="40" y1="20" x2="40" y2="40" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  </g>
+  
+  <!-- Sample bottles on shelf -->
+  <!-- Shelf -->
+  <g transform="translate(80, 360)">
+    <rect x="0" y="0" width="200" height="10" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+    
+    <!-- Bottle 1 -->
+    <g transform="translate(30, -30)">
+      <rect x="0" y="20" width="15" height="30" fill="#e0fdf4" stroke="#0d9488" stroke-width="1.5" rx="1"/>
+      <rect x="5" y="15" width="5" height="5" fill="#0d9488"/>
+      <text x="7.5" y="42" font-size="6" fill="#0d7377" text-anchor="middle">A</text>
+    </g>
+    
+    <!-- Bottle 2 -->
+    <g transform="translate(70, -30)">
+      <rect x="0" y="20" width="15" height="30" fill="#fce7f3" stroke="#ec4899" stroke-width="1.5" rx="1"/>
+      <rect x="5" y="15" width="5" height="5" fill="#ec4899"/>
+      <text x="7.5" y="42" font-size="6" fill="#be185d" text-anchor="middle">B</text>
+    </g>
+    
+    <!-- Bottle 3 -->
+    <g transform="translate(110, -30)">
+      <rect x="0" y="20" width="15" height="30" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5" rx="1"/>
+      <rect x="5" y="15" width="5" height="5" fill="#8b5cf6"/>
+      <text x="7.5" y="42" font-size="6" fill="#6d28d9" text-anchor="middle">C</text>
+    </g>
+  </g>
+  
+  <!-- Clipboard with lab notes -->
+  <g transform="translate(480, 320)">
+    <rect x="0" y="0" width="80" height="100" fill="white" stroke="#64748b" stroke-width="2" rx="3"/>
+    <!-- Clip -->
+    <rect x="30" y="-8" width="20" height="12" fill="#475569" rx="2"/>
+    <!-- Lines (notes) -->
+    <line x1="8" y1="15" x2="72" y2="15" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="8" y1="25" x2="72" y2="25" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="8" y1="35" x2="60" y2="35" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="8" y1="50" x2="72" y2="50" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="8" y1="60" x2="70" y2="60" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="8" y1="70" x2="65" y2="70" stroke="#cbd5e1" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Plus medical symbol -->
+  <g transform="translate(500, 150)" opacity="0.6">
+    <rect x="-3" y="-10" width="6" height="20" fill="#14b8a6"/>
+    <rect x="-10" y="-3" width="20" height="6" fill="#14b8a6"/>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OncoMedic — Atención oncológica de clase internacional. Agenda tu consulta con especialistas certificados en oncología, cuidados paliativos y bienestar integral." />
+  <meta name="keywords" content="oncología, cáncer, médicos, consulta médica, especialistas, OncoMedic, citas médicas" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:title" content="OncoMedic — Atención oncológica especializada" />
+  <meta property="og:description" content="Cuidamos de ti y de tu familia con tecnología, ciencia y calidez humana." />
+  <meta property="og:type" content="website" />
+  <title>OncoMedic — Atención oncológica especializada</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50:  '#eff8ff', 100: '#dbeefe', 200: '#bfe1fe', 300: '#93cffd',
+              400: '#60b3fa', 500: '#3b95f6', 600: '#1f74ea', 700: '#1a5dd7',
+              800: '#1c4dae', 900: '#1d4389',
+            },
+            teal: { 500: '#14b8a6', 600: '#0d9488' }
+          },
+          boxShadow: {
+            soft: '0 10px 40px -10px rgba(31, 116, 234, 0.25)',
+            glow: '0 0 0 1px rgba(255,255,255,0.4), 0 20px 60px -20px rgba(20,184,166,0.45)',
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'blob':  'blob 14s ease-in-out infinite',
+            'fade-up': 'fadeUp 0.8s ease-out both',
+          },
+          keyframes: {
+            float: { '0%,100%': { transform: 'translateY(0px)' }, '50%': { transform: 'translateY(-14px)' } },
+            blob:  {
+              '0%,100%': { transform: 'translate(0,0) scale(1)' },
+              '33%':     { transform: 'translate(30px,-20px) scale(1.05)' },
+              '66%':     { transform: 'translate(-20px,15px) scale(0.95)' },
+            },
+            fadeUp: { '0%': { opacity: 0, transform: 'translateY(20px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-sans bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100 antialiased">
+
+  <!-- Loader (inline so it shows immediately, before partials load) -->
+  <div id="loader" class="fixed inset-0 z-[100] flex items-center justify-center bg-white dark:bg-slate-950 transition-opacity duration-700">
+    <div class="flex flex-col items-center gap-4">
+      <div class="relative w-16 h-16">
+        <div class="absolute inset-0 rounded-full border-4 border-brand-100"></div>
+        <div class="absolute inset-0 rounded-full border-4 border-transparent border-t-brand-600 animate-spin"></div>
+      </div>
+      <p class="text-sm tracking-widest font-semibold text-brand-700 dark:text-brand-300">ONCOMEDIC</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       Sections are loaded from /sections/*.html via include.js
+       Edit each section file independently for easier maintenance.
+       ============================================================ -->
+  <div data-include="sections/navbar.html"></div>
+
+  <main>
+    <div data-include="sections/hero.html"></div>
+    <div data-include="sections/about.html"></div>
+    <div data-include="sections/specialists.html"></div>
+    <div data-include="sections/booking.html"></div>
+    <div data-include="sections/testimonials.html"></div>
+    <div data-include="sections/insurers.html"></div>
+  </main>
+
+  <div data-include="sections/footer.html"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="include.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

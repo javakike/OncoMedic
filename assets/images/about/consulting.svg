@@ -1,0 +1,87 @@
+<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="500" fill="#f8fafc"/>
+  
+  <!-- Decorative shapes -->
+  <circle cx="500" cy="80" r="60" fill="#e0f2fe" opacity="0.6"/>
+  <circle cx="100" cy="400" r="70" fill="#ccfbf1" opacity="0.5"/>
+  
+  <!-- Doctor (left side) -->
+  <g transform="translate(100, 100)">
+    <!-- Head -->
+    <circle cx="60" cy="45" r="35" fill="#daa889"/>
+    <!-- Hair -->
+    <path d="M 25 45 Q 25 15, 60 15 Q 95 15, 95 45 Z" fill="#2c3e50"/>
+    <!-- Body - Medical coat -->
+    <rect x="20" y="80" width="80" height="100" rx="10" fill="white" stroke="#1f74ea" stroke-width="2"/>
+    <!-- Arms -->
+    <rect x="0" y="90" width="20" height="70" rx="10" fill="#daa889"/>
+    <rect x="100" y="90" width="20" height="70" rx="10" fill="#daa889"/>
+    <!-- Stethoscope -->
+    <path d="M 40 85 L 40 60 Q 35 50, 30 45" stroke="#14b8a6" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="30" cy="45" r="5" fill="#14b8a6"/>
+  </g>
+  
+  <!-- Patient (right side, sitting) -->
+  <g transform="translate(320, 140)">
+    <!-- Head -->
+    <circle cx="50" cy="35" r="32" fill="#f5d5b8"/>
+    <!-- Hair -->
+    <path d="M 18 35 Q 18 8, 50 8 Q 82 8, 82 35 Z" fill="#8b5a3c"/>
+    <!-- Body - sitting -->
+    <ellipse cx="50" cy="85" rx="40" ry="45" fill="#e0e7ff"/>
+    <!-- Arms -->
+    <rect x="0" y="75" width="18" height="55" rx="9" fill="#f5d5b8"/>
+    <rect x="82" y="78" width="18" height="52" rx="9" fill="#f5d5b8"/>
+    <!-- Legs -->
+    <rect x="25" y="130" width="15" height="50" fill="#334155"/>
+    <rect x="60" y="132" width="15" height="48" fill="#334155"/>
+  </g>
+  
+  <!-- Medical chart/clipboard on desk -->
+  <g transform="translate(380, 290)">
+    <!-- Desk -->
+    <rect x="0" y="0" width="120" height="80" rx="5" fill="#e8e8e8"/>
+    <!-- Clipboard -->
+    <rect x="20" y="10" width="50" height="60" fill="white" stroke="#64748b" stroke-width="2" rx="3"/>
+    <!-- Papers -->
+    <line x1="30" y1="20" x2="60" y2="20" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="30" y1="30" x2="65" y2="30" stroke="#cbd5e1" stroke-width="2"/>
+    <line x1="30" y1="40" x2="60" y2="40" stroke="#cbd5e1" stroke-width="2"/>
+    <circle cx="75" cy="35" r="8" fill="#1f74ea"/>
+  </g>
+  
+  <!-- Computer monitor on desk (left) -->
+  <g transform="translate(80, 280)">
+    <!-- Monitor screen -->
+    <rect x="0" y="0" width="80" height="55" fill="#1e293b" stroke="#64748b" stroke-width="2" rx="3"/>
+    <!-- Screen glow -->
+    <rect x="5" y="5" width="70" height="45" fill="#3b95f6" opacity="0.3"/>
+    <!-- Stand -->
+    <rect x="30" y="55" width="20" height="15" fill="#64748b"/>
+  </g>
+  
+  <!-- Speech bubbles / conversation indicators -->
+  <!-- Doctor's thought -->
+  <g transform="translate(180, 80)">
+    <path d="M 0 0 L 15 -10 L 15 15 Q 0 20, -15 15 L -15 -10 Q 0 -5, 0 0 Z" fill="#ecfdf5" stroke="#14b8a6" stroke-width="2"/>
+    <circle cx="5" cy="8" r="3" fill="#14b8a6"/>
+  </g>
+  
+  <!-- Patient's response -->
+  <g transform="translate(350, 120)">
+    <path d="M 0 0 Q -20 -5, -25 -15 L 0 -10 Q 20 -8, 25 0 Q 20 20, 0 20 Z" fill="#f0f9ff" stroke="#1f74ea" stroke-width="2"/>
+    <circle cx="-10" cy="5" r="3" fill="#1f74ea"/>
+  </g>
+  
+  <!-- Plus signs (medical emphasis) -->
+  <g transform="translate(480, 180)" opacity="0.6">
+    <rect x="-2" y="-8" width="4" height="16" fill="#14b8a6"/>
+    <rect x="-8" y="-2" width="16" height="4" fill="#14b8a6"/>
+  </g>
+  
+  <g transform="translate(120, 450)" opacity="0.5">
+    <rect x="-3" y="-10" width="6" height="20" fill="#1f74ea"/>
+    <rect x="-10" y="-3" width="20" height="6" fill="#1f74ea"/>
+  </g>
+</svg>

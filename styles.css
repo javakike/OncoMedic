@@ -1,0 +1,191 @@
+/* OncoMedic – custom styles complement Tailwind */
+
+:root {
+  --brand-600: #1f74ea;
+  --brand-700: #1a5dd7;
+  --teal-500: #14b8a6;
+}
+
+html { -webkit-tap-highlight-color: transparent; }
+
+/* Better default scrollbar in dark mode */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #cbd5e1, #94a3b8);
+  border-radius: 999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #334155, #1e293b);
+}
+
+/* Selection color */
+::selection { background: rgba(31, 116, 234, 0.25); }
+
+/* Navbar elevation when scrolled */
+#navbar.scrolled nav {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.15);
+}
+.dark #navbar.scrolled nav {
+  background: rgba(15, 23, 42, 0.85);
+}
+
+/* Doctor card hover */
+.doctor-card {
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.doctor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px -25px rgba(31, 116, 234, 0.35);
+}
+
+/* Testimonial slide */
+.testimonial-slide {
+  flex: 0 0 100%;
+  padding: 0 1rem;
+}
+
+/* Star icon spacing */
+.stars svg + svg { margin-left: 2px; }
+
+/* Subtle gradient text underline on hover */
+nav a:hover { position: relative; }
+
+/* Loader hidden state */
+#loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Focus visible accessibility */
+:focus-visible {
+  outline: 2px solid var(--brand-600);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* ===== Insurers infinite marquee ===== */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;        /* non-interactive */
+  user-select: none;
+  -webkit-user-select: none;
+  mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+          mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+}
+
+.marquee-fade { display: none; } /* fade handled via mask */
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: max-content;
+  will-change: transform;
+  animation: marquee-scroll var(--marquee-duration, 40s) linear infinite;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); } /* exact half because content is duplicated */
+}
+
+.marquee-item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 110px;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.25rem;
+  background: #fff;
+  border: 1px solid rgb(241 245 249);
+  box-shadow: 0 10px 40px -10px rgba(31, 116, 234, 0.12);
+  filter: grayscale(1);
+  opacity: 0.55;
+  transition: filter .5s ease, opacity .5s ease, transform .5s ease, box-shadow .5s ease;
+}
+
+.dark .marquee-item {
+  background: rgb(30 41 59);
+  border-color: rgb(51 65 85);
+}
+
+.marquee-item .logo-text {
+  font-family: 'Plus Jakarta Sans', Inter, sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  color: rgb(51 65 85);
+}
+
+.dark .marquee-item .logo-text { color: rgb(226 232 240); }
+
+.marquee-item .logo-img,
+.marquee-item .logo-svg {
+  max-height: 56px;
+  max-width: 85%;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marquee-item .logo-svg svg {
+  width: 100%;
+  height: auto;
+  max-height: 56px;
+}
+
+.marquee-item .logo-sub {
+  font-size: 0.7rem;
+  color: rgb(100 116 139);
+  margin-top: 0.25rem;
+}
+
+/* Centered item — colored */
+.marquee-item.is-center {
+  filter: grayscale(0);
+  opacity: 1;
+  transform: scale(1.08);
+  box-shadow: 0 25px 60px -20px rgba(31, 116, 234, 0.35);
+}
+
+.marquee-item.is-center .logo-text {
+  background: linear-gradient(90deg, #1f74ea, #14b8a6);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+/* Responsive sizing */
+@media (max-width: 640px) {
+  .marquee-track { gap: 1.25rem; }
+  .marquee-item { width: 150px; height: 90px; padding: 0.75rem; }
+  .marquee-item .logo-text { font-size: 1.15rem; }
+  .marquee-item .logo-img,
+  .marquee-item .logo-svg svg { max-height: 40px; }
+  .marquee-item .logo-sub  { display: none; }
+}
+
+@media (min-width: 1024px) {
+  .marquee-item { width: 220px; height: 120px; }
+  .marquee-item .logo-img,
+  .marquee-item .logo-svg svg { max-height: 64px; }
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+  .marquee-track { animation: none !important; }
+}

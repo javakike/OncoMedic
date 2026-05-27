@@ -1,0 +1,67 @@
+<!-- BOOKING -->
+<section id="booking" class="py-24 bg-gradient-to-br from-brand-50 via-white to-teal-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 relative overflow-hidden">
+  <div class="absolute -top-20 right-0 w-96 h-96 bg-brand-200/40 dark:bg-brand-700/10 rounded-full blur-3xl"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="grid lg:grid-cols-5 gap-10 items-start">
+      <div class="lg:col-span-2" data-aos="fade-right">
+        <span class="text-sm font-semibold text-brand-600 tracking-widest uppercase">Agenda tu cita</span>
+        <h2 class="mt-3 font-display text-3xl sm:text-4xl font-extrabold leading-tight">Reserva en menos de un minuto</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">
+          Llena el formulario y un asesor confirmará tu disponibilidad por WhatsApp. Atención personalizada, sin filas y con la certeza de estar en las mejores manos.
+        </p>
+
+        <ul class="mt-6 space-y-3 text-sm">
+          <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center">✓</span> Confirmación inmediata</li>
+          <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center">✓</span> Recordatorios personalizados</li>
+          <li class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center">✓</span> Aseguradoras aliadas</li>
+        </ul>
+      </div>
+
+      <form id="bookingForm" class="lg:col-span-3 p-6 sm:p-8 rounded-3xl bg-white/80 dark:bg-slate-900/70 backdrop-blur-md border border-white/60 dark:border-white/10 shadow-soft" data-aos="fade-left">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="sm:col-span-2">
+            <label class="text-sm font-medium">Doctor / Especialidad</label>
+            <select id="f_doctor" required class="mt-2 w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-brand-400 outline-none transition">
+              <option value="">Selecciona un especialista</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm font-medium">Fecha</label>
+            <input id="f_date" type="date" required class="mt-2 w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-brand-400 outline-none transition" />
+          </div>
+          <div>
+            <label class="text-sm font-medium">Hora</label>
+            <select id="f_time" required class="mt-2 w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-brand-400 outline-none transition">
+              <option value="">Selecciona una hora</option>
+              <option>08:00</option><option>09:00</option><option>10:00</option>
+              <option>11:00</option><option>14:00</option><option>15:00</option>
+              <option>16:00</option><option>17:00</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm font-medium">Nombre del paciente</label>
+            <input id="f_name" type="text" required placeholder="Nombre completo" class="mt-2 w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-brand-400 outline-none transition" />
+          </div>
+          <div>
+            <label class="text-sm font-medium">Teléfono</label>
+            <input id="f_phone" type="tel" required placeholder="+503 0000-0000" class="mt-2 w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-brand-400 outline-none transition" />
+          </div>
+          <div class="sm:col-span-2">
+            <label class="text-sm font-medium">Correo electrónico</label>
+            <input id="f_email" type="email" required placeholder="tu@correo.com" class="mt-2 w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-brand-400 outline-none transition" />
+          </div>
+          <div class="sm:col-span-2">
+            <label class="text-sm font-medium">Motivo de consulta</label>
+            <textarea id="f_reason" rows="3" required placeholder="Cuéntanos brevemente el motivo de tu consulta" class="mt-2 w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:ring-2 focus:ring-brand-400 outline-none transition"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="mt-6 w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-teal-500 hover:from-brand-700 hover:to-teal-600 text-white font-semibold shadow-soft transition transform hover:-translate-y-0.5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-5 h-5"><path d="M16.003 3C9.374 3 4 8.374 4 15c0 2.378.69 4.595 1.882 6.469L4 29l7.711-1.832A12 12 0 0 0 16.003 27C22.632 27 28 21.626 28 15S22.632 3 16.003 3Zm6.953 17.04c-.292.82-1.69 1.553-2.354 1.61-.602.052-1.363.073-2.2-.138-.507-.128-1.157-.342-1.99-.7-3.5-1.51-5.79-5.034-5.962-5.265-.171-.231-1.425-1.894-1.425-3.614 0-1.72.902-2.566 1.223-2.916.32-.35.7-.438.933-.438.232 0 .465.002.668.012.213.01.501-.082.785.6.292.7.99 2.42 1.078 2.595.088.175.146.38.029.612-.116.231-.175.376-.349.58-.175.205-.367.456-.524.612-.175.175-.358.365-.154.715.205.35.91 1.502 1.953 2.43 1.341 1.196 2.473 1.567 2.823 1.742.35.175.553.146.758-.088.205-.233.875-1.022 1.108-1.371.233-.35.466-.292.787-.175.32.117 2.04.961 2.39 1.135.35.175.583.263.67.408.087.146.087.846-.205 1.666Z"/></svg>
+          Solicitar cita por WhatsApp
+        </button>
+        <p class="mt-3 text-xs text-slate-500 text-center">Al enviar, se abrirá WhatsApp con tu solicitud para confirmar disponibilidad.</p>
+      </form>
+    </div>
+  </div>
+</section>
