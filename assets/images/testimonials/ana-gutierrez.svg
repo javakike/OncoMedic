@@ -1,0 +1,53 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgAna" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce7f3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbcfe8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skinAna" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5c6a0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8b4a8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="300" height="300" fill="url(#bgAna)"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="120" r="45" fill="url(#skinAna)"/>
+  
+  <!-- Hair (wavy) -->
+  <path d="M 105 100 Q 105 75 150 75 Q 195 75 195 100" fill="#8b5a3c" stroke="none"/>
+  <circle cx="110" cy="95" r="6" fill="#8b5a3c"/>
+  <circle cx="190" cy="95" r="6" fill="#8b5a3c"/>
+  
+  <!-- Ears -->
+  <ellipse cx="105" cy="115" rx="8" ry="12" fill="url(#skinAna)"/>
+  <ellipse cx="195" cy="115" rx="8" ry="12" fill="url(#skinAna)"/>
+  
+  <!-- Eyes (warm) -->
+  <circle cx="135" cy="115" r="5" fill="#333"/>
+  <circle cx="165" cy="115" r="5" fill="#333"/>
+  <circle cx="136" cy="113" r="2" fill="white"/>
+  <circle cx="166" cy="113" r="2" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 125 105 Q 135 102 145 105" stroke="#6b3f2a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 155 105 Q 165 102 175 105" stroke="#6b3f2a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <line x1="150" y1="115" x2="150" y2="130" stroke="#d4956a" stroke-width="2"/>
+  
+  <!-- Happy mouth -->
+  <path d="M 135 140 Q 150 150 165 140" stroke="#a0654a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="135" y="165" width="30" height="15" fill="url(#skinAna)"/>
+  
+  <!-- Blouse -->
+  <path d="M 110 180 L 105 240 L 195 240 L 190 180 Q 150 170 110 180" fill="#e879f9" stroke="none"/>
+  
+  <!-- Pendant -->
+  <line x1="150" y1="175" x2="150" y2="200" stroke="#d4af37" stroke-width="2"/>
+  <circle cx="150" cy="205" r="4" fill="#d4af37"/>
+</svg>

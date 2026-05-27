@@ -1,0 +1,57 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgRivas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce7f3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbcfe8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skinRivas" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5c6a0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8b4a8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="300" height="300" fill="url(#bgRivas)"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="100" r="45" fill="url(#skinRivas)"/>
+  
+  <!-- Hair (long, tied) -->
+  <path d="M 105 80 Q 105 55 150 55 Q 195 55 195 80 L 195 105 Q 195 100 150 103 Q 105 100 105 105 Z" fill="#3d2817" stroke="none"/>
+  <!-- Hair tie -->
+  <circle cx="150" cy="135" r="8" fill="#d4af37" stroke="#c9a227" stroke-width="1"/>
+  
+  <!-- Ears -->
+  <ellipse cx="105" cy="95" rx="8" ry="12" fill="url(#skinRivas)"/>
+  <ellipse cx="195" cy="95" rx="8" ry="12" fill="url(#skinRivas)"/>
+  
+  <!-- Eyes -->
+  <circle cx="135" cy="95" r="4" fill="#333"/>
+  <circle cx="165" cy="95" r="4" fill="#333"/>
+  <circle cx="136" cy="94" r="1.5" fill="white"/>
+  <circle cx="166" cy="94" r="1.5" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 125 85 Q 135 82 145 85" stroke="#2d1f10" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 155 85 Q 165 82 175 85" stroke="#2d1f10" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <line x1="150" y1="95" x2="150" y2="110" stroke="#d4956a" stroke-width="2"/>
+  
+  <!-- Mouth -->
+  <path d="M 135 120 Q 150 128 165 120" stroke="#9a5c47" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="135" y="145" width="30" height="20" fill="url(#skinRivas)"/>
+  
+  <!-- Medical coat -->
+  <path d="M 110 165 L 110 250 L 190 250 L 190 165 Q 150 155 110 165" fill="white" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Lab coat buttons -->
+  <circle cx="150" cy="190" r="3" fill="#666"/>
+  <circle cx="150" cy="210" r="3" fill="#666"/>
+  
+  <!-- Blood analysis badge -->
+  <rect x="125" y="210" width="50" height="25" rx="3" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="150" y="228" font-family="Arial, sans-serif" font-size="8" fill="#16a34a" text-anchor="middle" font-weight="bold">Dra. L.</text>
+</svg>

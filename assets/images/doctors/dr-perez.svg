@@ -1,0 +1,59 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgPerez" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skinPerez" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ead1dc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dcc7d6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="300" height="300" fill="url(#bgPerez)"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="100" r="45" fill="url(#skinPerez)"/>
+  
+  <!-- Hair (curly/wavy) -->
+  <path d="M 105 85 Q 105 55 150 55 Q 195 55 195 85" fill="#2d2d2d" stroke="none"/>
+  <circle cx="115" cy="70" r="8" fill="#2d2d2d"/>
+  <circle cx="185" cy="70" r="8" fill="#2d2d2d"/>
+  <circle cx="125" cy="60" r="7" fill="#2d2d2d"/>
+  <circle cx="175" cy="60" r="7" fill="#2d2d2d"/>
+  
+  <!-- Ears -->
+  <ellipse cx="105" cy="95" rx="8" ry="12" fill="url(#skinPerez)"/>
+  <ellipse cx="195" cy="95" rx="8" ry="12" fill="url(#skinPerez)"/>
+  
+  <!-- Eyes (warm, caring) -->
+  <circle cx="135" cy="95" r="4" fill="#333"/>
+  <circle cx="165" cy="95" r="4" fill="#333"/>
+  <circle cx="136" cy="94" r="1.5" fill="white"/>
+  <circle cx="166" cy="94" r="1.5" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 125 85 Q 135 82 145 85" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 155 85 Q 165 82 175 85" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <line x1="150" y1="95" x2="150" y2="110" stroke="#d4a5a5" stroke-width="2"/>
+  
+  <!-- Smile -->
+  <path d="M 135 120 Q 150 130 165 120" stroke="#c08080" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="135" y="145" width="30" height="20" fill="url(#skinPerez)"/>
+  
+  <!-- Pediatric medical coat (cheerful) -->
+  <path d="M 110 165 L 110 250 L 190 250 L 190 165 Q 150 155 110 165" fill="white" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Stethoscope with heart -->
+  <circle cx="150" cy="200" r="12" fill="#ef4444" opacity="0.2"/>
+  <path d="M 130 190 Q 140 195 150 200 Q 160 195 170 190" stroke="#ef4444" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Pediatrics badge -->
+  <rect x="120" y="210" width="60" height="25" rx="3" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="150" y="228" font-family="Arial, sans-serif" font-size="8" fill="#0284c7" text-anchor="middle" font-weight="bold">Dra. S.</text>
+</svg>

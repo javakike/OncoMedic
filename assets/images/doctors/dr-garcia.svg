@@ -1,0 +1,57 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGarcia" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fefce8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fef3c7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skinGarcia" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4956a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c19a6b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="300" height="300" fill="url(#bgGarcia)"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="100" r="45" fill="url(#skinGarcia)"/>
+  
+  <!-- Hair -->
+  <path d="M 105 80 Q 105 55 150 55 Q 195 55 195 80 L 195 105 Q 195 100 150 103 Q 105 100 105 105 Z" fill="#4a3728" stroke="none"/>
+  <!-- Hair strands (graying) -->
+  <line x1="120" y1="60" x2="120" y2="80" stroke="#888" stroke-width="1" opacity="0.5"/>
+  <line x1="180" y1="60" x2="180" y2="80" stroke="#888" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Ears -->
+  <ellipse cx="105" cy="95" rx="8" ry="12" fill="url(#skinGarcia)"/>
+  <ellipse cx="195" cy="95" rx="8" ry="12" fill="url(#skinGarcia)"/>
+  
+  <!-- Eyes -->
+  <circle cx="135" cy="95" r="4" fill="#333"/>
+  <circle cx="165" cy="95" r="4" fill="#333"/>
+  <circle cx="136" cy="94" r="1.5" fill="white"/>
+  <circle cx="166" cy="94" r="1.5" fill="white"/>
+  
+  <!-- Eyebrows (graying) -->
+  <path d="M 125 85 Q 135 82 145 85" stroke="#666" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 155 85 Q 165 82 175 85" stroke="#666" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <line x1="150" y1="95" x2="150" y2="110" stroke="#b8956a" stroke-width="2"/>
+  
+  <!-- Mouth -->
+  <path d="M 135 120 Q 150 127 165 120" stroke="#8b6f47" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="135" y="145" width="30" height="20" fill="url(#skinGarcia)"/>
+  
+  <!-- Professional medical coat -->
+  <path d="M 110 165 L 110 250 L 190 250 L 190 165 Q 150 155 110 165" fill="white" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Radiotherapy badge (with radiation symbol) -->
+  <rect x="120" y="210" width="60" height="25" rx="3" fill="#fef3c7" stroke="#ca8a04" stroke-width="1.5"/>
+  <circle cx="150" cy="222" r="3" fill="#ca8a04"/>
+  <path d="M 150 222 L 155 218" stroke="#ca8a04" stroke-width="1" fill="none"/>
+  <path d="M 150 222 L 148 217" stroke="#ca8a04" stroke-width="1" fill="none"/>
+  <text x="150" y="238" font-family="Arial, sans-serif" font-size="6" fill="#ca8a04" text-anchor="middle" font-weight="bold">Dr. A.</text>
+</svg>

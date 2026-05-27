@@ -1,0 +1,57 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgAlvarez" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9d5ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skinAlvarez" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c19a6b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="300" height="300" fill="url(#bgAlvarez)"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="100" r="45" fill="url(#skinAlvarez)"/>
+  
+  <!-- Hair -->
+  <path d="M 105 100 Q 105 55 150 55 Q 195 55 195 100" fill="#2c2c2c" stroke="none"/>
+  
+  <!-- Ears -->
+  <ellipse cx="105" cy="95" rx="8" ry="12" fill="url(#skinAlvarez)"/>
+  <ellipse cx="195" cy="95" rx="8" ry="12" fill="url(#skinAlvarez)"/>
+  
+  <!-- Eyes -->
+  <circle cx="135" cy="95" r="4" fill="#333"/>
+  <circle cx="165" cy="95" r="4" fill="#333"/>
+  <circle cx="136" cy="94" r="1.5" fill="white"/>
+  <circle cx="166" cy="94" r="1.5" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 125 85 Q 135 82 145 85" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 155 85 Q 165 82 175 85" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <line x1="150" y1="95" x2="150" y2="110" stroke="#b8956a" stroke-width="2"/>
+  
+  <!-- Mouth -->
+  <path d="M 135 120 Q 150 128 165 120" stroke="#a0654a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="135" y="145" width="30" height="20" fill="url(#skinAlvarez)"/>
+  
+  <!-- White coat / Medical uniform -->
+  <path d="M 110 165 L 110 250 L 190 250 L 190 165 Q 150 155 110 165" fill="white" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Stethoscope -->
+  <path d="M 130 175 Q 130 185 140 190" stroke="#2563eb" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 170 175 Q 170 185 160 190" stroke="#2563eb" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="140" cy="190" r="8" fill="none" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="160" cy="190" r="8" fill="none" stroke="#2563eb" stroke-width="3"/>
+  
+  <!-- ID Badge -->
+  <rect x="125" y="210" width="50" height="25" rx="3" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="150" y="228" font-family="Arial, sans-serif" font-size="8" fill="#0284c7" text-anchor="middle" font-weight="bold">Dra. M.</text>
+</svg>

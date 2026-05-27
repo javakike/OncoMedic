@@ -1,0 +1,61 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgLopez" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef2f2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fee2e2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skinLopez" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4956a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c19a6b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="300" height="300" fill="url(#bgLopez)"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="100" r="45" fill="url(#skinLopez)"/>
+  
+  <!-- Hair (graying, receding) -->
+  <path d="M 110 75 Q 110 55 150 55 Q 190 55 190 75 L 190 105 Q 190 100 150 103 Q 110 100 110 105 Z" fill="#5a5a5a" stroke="none"/>
+  <!-- Gray hair streaks -->
+  <line x1="130" y1="55" x2="130" y2="75" stroke="#999" stroke-width="2" opacity="0.6"/>
+  <line x1="170" y1="55" x2="170" y2="75" stroke="#999" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Ears -->
+  <ellipse cx="105" cy="95" rx="8" ry="12" fill="url(#skinLopez)"/>
+  <ellipse cx="195" cy="95" rx="8" ry="12" fill="url(#skinLopez)"/>
+  
+  <!-- Eyes (compassionate) -->
+  <circle cx="135" cy="95" r="4" fill="#333"/>
+  <circle cx="165" cy="95" r="4" fill="#333"/>
+  <circle cx="136" cy="94" r="1.5" fill="white"/>
+  <circle cx="166" cy="94" r="1.5" fill="white"/>
+  
+  <!-- Eye wrinkles (experience) -->
+  <path d="M 130 95 Q 133 93 135 95" stroke="#a67555" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 165 95 Q 167 93 170 95" stroke="#a67555" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Eyebrows (graying) -->
+  <path d="M 125 85 Q 135 82 145 85" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 155 85 Q 165 82 175 85" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <line x1="150" y1="95" x2="150" y2="110" stroke="#b8956a" stroke-width="2"/>
+  
+  <!-- Mouth (gentle, compassionate) -->
+  <path d="M 135 120 Q 150 125 165 120" stroke="#8b6f47" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="135" y="145" width="30" height="20" fill="url(#skinLopez)"/>
+  
+  <!-- Compassionate medical coat -->
+  <path d="M 110 165 L 110 250 L 190 250 L 190 165 Q 150 155 110 165" fill="white" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Heart (symbolizing palliative care) -->
+  <path d="M 135 185 L 150 200 L 165 185 Q 165 175 150 175 Q 135 175 135 185 Z" fill="#ef4444" opacity="0.6"/>
+  
+  <!-- Palliative care badge -->
+  <rect x="115" y="210" width="70" height="25" rx="3" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="150" y="228" font-family="Arial, sans-serif" font-size="7" fill="#dc2626" text-anchor="middle" font-weight="bold">Dr. R.</text>
+</svg>

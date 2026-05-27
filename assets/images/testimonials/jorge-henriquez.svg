@@ -1,0 +1,51 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgJorge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skinJorge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4956a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c19a6b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="300" height="300" fill="url(#bgJorge)"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="120" r="45" fill="url(#skinJorge)"/>
+  
+  <!-- Hair -->
+  <path d="M 105 90 Q 105 75 150 75 Q 195 75 195 90 L 195 105 Q 195 100 150 103 Q 105 100 105 105 Z" fill="#2c2c2c" stroke="none"/>
+  
+  <!-- Ears -->
+  <ellipse cx="105" cy="115" rx="8" ry="12" fill="url(#skinJorge)"/>
+  <ellipse cx="195" cy="115" rx="8" ry="12" fill="url(#skinJorge)"/>
+  
+  <!-- Eyes -->
+  <circle cx="135" cy="115" r="5" fill="#333"/>
+  <circle cx="165" cy="115" r="5" fill="#333"/>
+  <circle cx="136" cy="113" r="2" fill="white"/>
+  <circle cx="166" cy="113" r="2" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 125 105 Q 135 102 145 105" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 155 105 Q 165 102 175 105" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <line x1="150" y1="115" x2="150" y2="130" stroke="#b8956a" stroke-width="2"/>
+  
+  <!-- Smile -->
+  <path d="M 135 140 Q 150 148 165 140" stroke="#8b6f47" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="135" y="165" width="30" height="15" fill="url(#skinJorge)"/>
+  
+  <!-- Shirt -->
+  <path d="M 110 180 L 105 240 L 195 240 L 190 180 Q 150 170 110 180" fill="#1e40af" stroke="none"/>
+  
+  <!-- Shirt buttons -->
+  <circle cx="150" cy="195" r="2.5" fill="#d4af37"/>
+  <circle cx="150" cy="215" r="2.5" fill="#d4af37"/>
+</svg>

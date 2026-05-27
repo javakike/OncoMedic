@@ -1,0 +1,59 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgMendoza" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skinMendoza" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8b4a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d9a091;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="300" height="300" fill="url(#bgMendoza)"/>
+  
+  <!-- Head -->
+  <circle cx="150" cy="100" r="45" fill="url(#skinMendoza)"/>
+  
+  <!-- Hair -->
+  <path d="M 105 90 Q 105 55 150 55 Q 195 55 195 90 L 195 105 Q 195 100 150 103 Q 105 100 105 105 Z" fill="#1a1a1a" stroke="none"/>
+  
+  <!-- Facial hair (beard) -->
+  <path d="M 120 120 Q 150 130 180 120" fill="#3d3d3d" stroke="none"/>
+  
+  <!-- Ears -->
+  <ellipse cx="105" cy="95" rx="8" ry="12" fill="url(#skinMendoza)"/>
+  <ellipse cx="195" cy="95" rx="8" ry="12" fill="url(#skinMendoza)"/>
+  
+  <!-- Eyes -->
+  <circle cx="135" cy="95" r="4" fill="#333"/>
+  <circle cx="165" cy="95" r="4" fill="#333"/>
+  <circle cx="136" cy="94" r="1.5" fill="white"/>
+  <circle cx="166" cy="94" r="1.5" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 125 85 Q 135 82 145 85" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 155 85 Q 165 82 175 85" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <line x1="150" y1="95" x2="150" y2="112" stroke="#c89680" stroke-width="2"/>
+  
+  <!-- Mouth -->
+  <path d="M 135 125 Q 150 132 165 125" stroke="#a0654a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Neck -->
+  <rect x="135" y="145" width="30" height="20" fill="url(#skinMendoza)"/>
+  
+  <!-- Medical coat with surgical elements -->
+  <path d="M 110 165 L 110 250 L 190 250 L 190 165 Q 150 155 110 165" fill="white" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Surgical mask (lowered) -->
+  <rect x="120" y="130" width="60" height="20" rx="3" fill="#1e40af" opacity="0.6"/>
+  <line x1="130" y1="128" x2="130" y2="125" stroke="#1e40af" stroke-width="1.5"/>
+  <line x1="170" y1="128" x2="170" y2="125" stroke="#1e40af" stroke-width="1.5"/>
+  
+  <!-- Surgical instruments badge -->
+  <rect x="125" y="210" width="50" height="25" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="150" y="228" font-family="Arial, sans-serif" font-size="8" fill="#dc2626" text-anchor="middle" font-weight="bold">Dr. C.</text>
+</svg>
