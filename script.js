@@ -159,6 +159,12 @@ function renderLogos() {
       </span>
     `;
   });
+
+  // Render social links in footer
+  const socialContainer = document.getElementById('socialLinks');
+  if (socialContainer) {
+    socialContainer.innerHTML = renderSocialLinks();
+  }
 }
 
 // ---- Navbar scroll state ----
